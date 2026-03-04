@@ -472,15 +472,6 @@ class mm_with_fads:
         return V
 
 
-
-
-
-
-
-
-
-        
-        
     
     def compute_deltas(self):
         delta_a = np.zeros((self.N_t, len(self.q_vector),len(self.u_vector)))
@@ -497,8 +488,7 @@ class mm_with_fads:
 
 
         
-
-    def compute_integral_related_to_psi(self): #useful to rescale \psi, we do 150/compute_integral_related_to_psi() to get the value of \psi
+    def compute_integral_related_to_psi(self): #useful to rescale \psi, we do 15/compute_integral_related_to_psi() to get the value of \psi
         val = np.zeros(self.N_t)
         for t in range(len(val)):
             val[t] = np.exp(self.gamma**2 / 2 * (
